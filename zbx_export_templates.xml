@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2019-09-10T04:34:29Z</date>
+    <date>2019-09-10T05:44:45Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -29,7 +29,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>list-clister</key>
-                    <delay>60</delay>
+                    <delay>86400</delay>
                     <history>90d</history>
                     <trends>0</trends>
                     <status>0</status>
@@ -90,7 +90,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>1c.test</key>
-                    <delay>30s</delay>
+                    <delay>1h</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -135,7 +135,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>designer-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
-                            <delay>30s</delay>
+                            <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -195,7 +195,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>fat-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
-                            <delay>30s</delay>
+                            <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -255,7 +255,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>onec-bgj[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
-                            <delay>30s</delay>
+                            <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -315,7 +315,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>onec-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
-                            <delay>30s</delay>
+                            <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -375,7 +375,7 @@
                             <snmp_community/>
                             <snmp_oid/>
                             <key>web-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
-                            <delay>30s</delay>
+                            <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
                             <status>0</status>
