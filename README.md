@@ -15,7 +15,7 @@ cd "C:\Program Files\1cv8\8.3.13.1865\bin\" & for /f "tokens=3" %i in ('rac.exe 
 `UserParameter=web-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "WebClient"`<br>
 `UserParameter=fat-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "1CV8"`<br>
 `UserParameter=designer-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "Designer"`<br>
-4) Включить службу RAS (укажите свою версию 1С, если нужно)
+4) Включить службу RAS (укажите свою версию 1С, если нужно)<br>
 `sc create "1C:Enterprise RAS" binpath= "C:\Program Files\1cv8\8.3.13.1865\bin\ras.exe cluster --service" displayname= "1C:Enterprise RAS" start= auto `<br>
 `net start "1C:Enterprise RAS"`<br>
 5) Добавить скрипт zabbix_1c.bat в планировщик задач или запустить вручную<br><br>
@@ -36,7 +36,7 @@ cd "C:\Program Files\1cv8\8.3.13.1865\bin\" & for /f "tokens=3" %i in ('rac.exe 
 `UserParameter=web-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "WebClient"`<br>
 `UserParameter=fat-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "1CV8"`<br>
 `UserParameter=designer-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "Designer"`<br>
-4) Enable RAS service (change 1С version, if you need)
+4) Enable RAS service (change 1С version, if you need)<br>
 `sc create "1C:Enterprise RAS" binpath= "C:\Program Files\1cv8\8.3.13.1865\bin\ras.exe cluster --service" displayname= "1C:Enterprise RAS" start= auto `<br>
 `net start "1C:Enterprise RAS"`<br>
 5) Add zabbix_1c.bat in task scheduler or just run it<br><br>
