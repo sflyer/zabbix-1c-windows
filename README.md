@@ -8,13 +8,13 @@ cd "C:\Program Files\1cv8\8.3.13.1865\bin\" & for /f "tokens=3" %i in ('rac.exe 
 `
 	- путь введите в переменную CONF_PATH проверена работоспособность пути только без пробелов
 3) В конфигурацию zabbix-agent добавить строчки:
-`UserParameter=1c.test,type C:\zabbix\base.json
-UserParameter=list-clister,cd "C:\Program Files\1cv8\8.3.13.1865\bin\" & for /f "tokens=3" %i in ('rac.exe cluster list ^| findstr "cluster"') do @echo %i
-UserParameter=onec-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 |  find /c "1CV8C"
-UserParameter=onec-bgj[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "BackgroundJob"
-UserParameter=web-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "WebClient"
-UserParameter=fat-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "1CV8"
-UserParameter=designer-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "Designer"`
+`UserParameter=1c.test,type C:\zabbix\base.json`
+`UserParameter=list-clister,cd "C:\Program Files\1cv8\8.3.13.1865\bin\" & for /f "tokens=3" %i in ('rac.exe cluster list ^| findstr "cluster"') do @echo %i`
+`UserParameter=onec-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 |  find /c "1CV8C"`
+`UserParameter=onec-bgj[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "BackgroundJob"`
+`UserParameter=web-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "WebClient"`
+`UserParameter=fat-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "1CV8"`
+`UserParameter=designer-session[*],"C:\Program Files\1cv8\8.3.13.1865\bin\rac.exe" session --cluster=$1 list --infobase=$2 | find /c "Designer"`
 4) Включить службу RAS (укажите свою версию 1С, если нужно)
 `sc create "1C:Enterprise RAS" binpath= "C:\Program Files\1cv8\8.3.13.1865\bin\ras.exe cluster --service" displayname= "1C:Enterprise RAS" start= auto `
 `net start "1C:Enterprise RAS"`
