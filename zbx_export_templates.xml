@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2019-09-10T05:44:45Z</date>
+    <date>2019-10-01T02:54:53Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -431,22 +431,6 @@
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
-                        <trigger_prototype>
-                            <expression>{1C-session:web-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}].last(#500)}=0 and {1C-session:designer-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}].last(#500)}=0 and {1C-session:fat-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}].last(#500)}=0 and {1C-session:onec-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}].last(#500)}=0</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
-                            <name>{#BASE_NAME} нет пользователей более 20 дней!</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
-                            <url/>
-                            <status>0</status>
-                            <priority>2</priority>
-                            <description/>
-                            <type>0</type>
-                            <manual_close>0</manual_close>
-                            <dependencies/>
-                            <tags/>
-                        </trigger_prototype>
                         <trigger_prototype>
                             <expression>{1C-session:designer-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}].last(0)}&lt;&gt;0</expression>
                             <recovery_mode>0</recovery_mode>
