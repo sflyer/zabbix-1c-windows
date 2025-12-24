@@ -134,7 +134,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>designer-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
+                            <key>session[{#BASE_1C},{#CLUSTER},{#PORT},Designer]</key>
                             <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -194,7 +194,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>fat-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
+                            <key>session[{#BASE_1C},{#CLUSTER},{#PORT},1CV8 ]</key>
                             <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -254,7 +254,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>onec-bgj[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
+                            <key>session[{#BASE_1C},{#CLUSTER},{#PORT},BackgroundJob]</key>
                             <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -314,7 +314,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>onec-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
+                            <key>session[{#BASE_1C},{#CLUSTER},{#PORT},1CV8C]</key>
                             <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -374,7 +374,7 @@
                             <type>0</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>web-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}]</key>
+                            <key>session[{#BASE_1C},{#CLUSTER},{#PORT},WebClient]</key>
                             <delay>60s</delay>
                             <history>90d</history>
                             <trends>365d</trends>
@@ -432,7 +432,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{1C-session:designer-session[38cf94b3-a78c-450d-a9b3-0473568cec53,{#BASE_1C}].last(0)}&lt;&gt;0</expression>
+                            <expression>{1C-session:session[{#BASE_1C},{#CLUSTER},{#PORT},Designer].last(0)}&lt;&gt;0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>Запущен конфигуратор в {#BASE_NAME}</name>
